@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="New Dreamz Multimedia Education provides high-quality technical education and training to students.">
+    <meta name="keywords" content="New Dreamz Multimedia Education, Computer Institute, Technical Courses">
+    <meta name="author" content="NEW DREAMZ MULTIMEDIA EDUCATION">
+
+    <title>New Dreamz Multimedia Education</title>
+    
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/responsive.css"> <!-- Link to responsive stylesheet -->
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/All Logo-06.png" id="logo-img" ></a>
+            <div class="nav-links" id="navLinks">
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Admission_page.html">Admission</a></li>
+                    <li><a href="#course_call">Courses</a></li>
+                    <!-- <li><a href="fees_page.html">Fees</a></li> -->
+                    <li><a href="Contact_page.html">Contact</a></li>
+                </ul>
+            </div> 
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+       
+        <div class="text-box">
+            <h1>New Dreamz Multimedia Education</h1>
+            <p>New Dreamz Multimedia Education at Kamrej provides top-quality technical education, <br> preparing students for careers in IT and multimedia.</p>
+            <a href="Admission_page.html" class="hero-btn">Admission Open</a>
+        </div>
+    </section>
+
+    <!-- <section class="courses-slider"id="course_call">
+        <h1>Our Courses</h1>
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="course-card">
+                    <img src="image/course1.png" alt="Course 1">
+                    <h3>Full Stack Development</h3>
+                    <p>Learn front-end and back-end development.</p>
+                </div>
+                <div class="course-card">
+                    <img src="image/course2.png" alt="Course 2">
+                    <h3>Application Development</h3>
+                    <p>Develop mobile and desktop apps.</p>
+                </div>
+                <div class="course-card">
+                    <img src="image/course3.png" alt="Course 3">
+                    <h3>UI/UX Design</h3>
+                    <p>Create beautiful and user-friendly interfaces.</p>
+                </div>
+                <div class="course-card">
+                    <img src="image/course4.png" alt="Course 4">
+                    <h3>Graphic Design</h3>
+                    <p>Master graphic design tools.</p>
+                </div>
+                <div class="course-card">
+                    <img src="image/course5.png" alt="Course 5">
+                    <h3>Digital Marketing</h3>
+                    <p>SEO, social media, content marketing.</p>
+                </div>
+                <div class="course-card">
+                    <img src="image/course6.png" alt="Course 6">
+                    <h3>CCC Course</h3>
+                    <p>Basic computer skills and IT knowledge.</p>
+                </div>
+                <div class="course-card">
+                    <img src="image/course7.png" alt="Course 7">
+                    <h3>Spoken English</h3>
+                    <p>Improve your English communication skills.</p>
+                </div>
+                <div class="course-card">
+                    <img src="image/course8.png" alt="Course 8">
+                    <h3>Web Designing</h3>
+                    <p>Learn to build attractive websites.</p>
+                </div>
+                <div class="course-card">
+                    <img src="image/course9.png" alt="Course 9">
+                    <h3>Python Programming</h3>
+                    <p>Master Python for software development.</p>
+                </div>
+                <div class="course-card">
+                    <img src="image/course10.png" alt="Course 10">
+                    <h3>Cyber Security</h3>
+                    <p>Learn ethical hacking and cyber safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     -->
+   
+     <section class="courses-slider" id="course_call">
+        <h1>Our Courses</h1>
+        <div class="slider-container">
+          <div class="slider-track">
+            <div class="course-card" onclick="showCourseDetail('fullstack')">
+              <img src="image/course1.png" alt="Course 1">
+              <h3>Full Stack Development</h3>
+              <p>Learn front-end and back-end development.</p>
+            </div>
+            <div class="course-card" onclick="showCourseDetail('appdev')">
+              <img src="image/course2.png" alt="Course 2">
+              <h3>Application Development</h3>
+              <p>Develop mobile and desktop apps.</p>
+            </div>
+            <div class="course-card" onclick="showCourseDetail('uiux')">
+              <img src="image/course3.png" alt="Course 3">
+              <h3>UI/UX Design</h3>
+              <p>Create beautiful and user-friendly interfaces.</p>
+            </div>
+            <div class="course-card" onclick="showCourseDetail('graphic')">
+              <img src="image/course4.png" alt="Course 4">
+              <h3>Graphic Design</h3>
+              <p>Master graphic design tools.</p>
+            </div>
+            <div class="course-card" onclick="showCourseDetail('digital')">
+              <img src="image/course5.png" alt="Course 5">
+              <h3>Digital Marketing</h3>
+              <p>SEO, social media, content marketing.</p>
+            </div>
+            <div class="course-card" onclick="showCourseDetail('ccc')">
+              <img src="image/course6.png" alt="Course 6">
+              <h3>CCC Course</h3>
+              <p>Basic computer skills and IT knowledge.</p>
+            </div>
+            <div class="course-card" onclick="showCourseDetail('spoken')">
+              <img src="image/course7.png" alt="Course 7">
+              <h3>Spoken English</h3>
+              <p>Improve your English communication skills.</p>
+            </div>
+            <div class="course-card" onclick="showCourseDetail('web')">
+              <img src="image/course8.png" alt="Course 8">
+              <h3>Web Designing</h3>
+              <p>Learn to build attractive websites.</p>
+            </div>
+            <div class="course-card" onclick="showCourseDetail('python')">
+              <img src="image/course9.png" alt="Course 9">
+              <h3>Python Programming</h3>
+              <p>Master Python for software development.</p>
+            </div>
+            <div class="course-card" onclick="showCourseDetail('cyber')">
+              <img src="image/course10.png" alt="Course 10">
+              <h3>Cyber Security</h3>
+              <p>Learn ethical hacking and cyber safety.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Detail Section -->
+      <section id="courseDetailSection">
+        <div class="course-detail" id="courseDetailBox"></div>
+      </section>
+   
+
+<section class="album-section">
+    <h1> Photo Album</h1>
+    <p>Experience our moments with a 3D touch!</p>
+    <div class="album-container">
+      
+        <div class="album-item">
+            <img src="image/Ghibli/1 (1).png" class="album-img" alt="Seminar Event">
+            <div class="album-overlay">Seminar Event</div>
+        </div>
+        <div class="album-item">
+            <img src="image/Ghibli/2.png" class="album-img" alt="Workshop">
+            <div class="album-overlay">Workshop</div>
+        </div>
+        <div class="album-item">
+            <img src="image/Ghibli/9.png" class="album-img" alt="Student Activities">
+            <div class="album-overlay">Student Activities</div>
+        </div>
+        <div class="album-item">
+            <img src="image/Ghibli/4.png" class="album-img" alt="Student Activities">
+            <div class="album-overlay">Student Activities</div>
+        </div>
+        <div class="album-item">
+            <img src="image/Ghibli/5.png" class="album-img" alt="Campus Life">
+            <div class="album-overlay">Campus Life</div>
+        </div>
+        <div class="album-item">
+            <img src="image/Ghibli/6.png" class="album-img" alt="Classroom Session">
+            <div class="album-overlay">Classroom Session</div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>New Dreamz Multimedia Education offers the best infrastructure and facilities for students.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="image/Ghibli/7.png" alt="" height="200px">
+                <h3>Modern Computer Lab</h3>
+                <p>State-of-the-art computer labs with the latest software and hardware for hands-on training.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="image/Ghibli/9.png" alt="">
+                <h3>Smart Classrooms</h3>
+                <p>Well-equipped classrooms with smart boards and digital learning tools.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="image/Ghibli/2.png" alt="">
+                <h3>Library</h3>
+                <p>A well-stocked library with books, e-resources, and study materials for students.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="student-reviews">
+        <h1>🌟 What Our Students Say</h1>
+        <p>Real experiences from our students.</p>
+    
+        <div class="review-container" id="review-container">
+            <!-- Reviews will be loaded here dynamically -->
+        </div>
+    
+        <div class="pagination">
+            <button onclick="changePage(-1)">&#10094; Prev</button>
+            <span id="page-number">1</span>
+            <button onclick="changePage(1)">Next &#10095;</button>
+        </div>
+    </section>
+    
+    <!-- <section class="student-reviews">
+        <h1>🌟 What Our Students Say</h1>
+        <p>Real experiences from our students.</p>
+        
+        <div class="review-container">
+            <div class="review-card">
+                <img src="image/student1.jpg" class="review-img" alt="Student 1">
+                <h3>Rahul Sharma</h3>
+                <p>"Amazing institute! The teachers are knowledgeable, and I gained hands-on experience. Highly recommended!"</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+    
+            <div class="review-card">
+                <img src="image/student2.jpg" class="review-img" alt="Student 2">
+                <h3>Pooja Patel</h3>
+                <p>"The best place to learn multimedia and digital marketing. Great environment and support!"</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+    
+            <div class="review-card">
+                <img src="image/student3.jpg" class="review-img" alt="Student 3">
+                <h3>Vikas Mehta</h3>
+                <p>"The Full Stack Development course helped me get a great job! Practical learning and great mentors!"</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </section> -->
+    
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>New Dreamz Multimedia Education is committed to providing high-quality IT and multimedia education to students, preparing them for successful careers.</p>
+            </div>
+    
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Admission_page.html">Admission</a></li>
+                    <li><a href="fees_page.html">Fees</a></li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><strong>Location:</strong> 221, Kashi Plaza oppsite signet mall, Kamrej, Surat</p>
+                <p><strong>Email:</strong> info.dreamzmultimediainstitute@gmail.com</p>
+                <p><strong>Phone:</strong> +91 72020 01475</p>
+            </div>
+        </div>
+    
+        <div class="social-icons">
+            <a href="#"><img src="image/social/FACEBOOK.png" alt="Facebook"></a>
+            <a href="#"><img src="image/social/Instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="image/social/Twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="image/social/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    
+        <p id="copyright">&copy; 2025 New Dreamz Multimedia Education. All Rights Reserved.</p>
+    </section>
+    
+
+    <!-- <section class="footer">
+        <h4>About Us</h4>
+        <p>New Dreamz Multimedia Education is committed to providing high-quality IT and multimedia education.</p>
+        <p id="copyright">&copy; 2025 New Dreamz Multimedia Education. All Rights Reserved.</p>
+    </section> -->
+
+    <script src="javascript/main_script.js"></script>
+</body>
+</html>
